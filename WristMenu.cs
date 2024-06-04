@@ -72,22 +72,33 @@ namespace MalachiTemp.UI
             new ButtonInfo { buttonText = "holdable mods", method =() => Mods.Cat4(), enabled = false, toolTip = "Go to Category 4!"},
             new ButtonInfo { buttonText = "op mods", method =() => Mods.Cat5(), enabled = false, toolTip = "Go to Category 5!"},
             new ButtonInfo { buttonText = "visual mods", method =() => Mods.Cat6(), enabled = false, toolTip = "Go to Category 6!"},
-            new ButtonInfo { buttonText = "placeholder Category 7", method =() => Mods.Cat7(), enabled = false, toolTip = "Go to Category 7!"},
-            new ButtonInfo { buttonText = "placeholder Category 8", method =() => Mods.Cat8(), enabled = false, toolTip = "Go to Category 8!"},
+            new ButtonInfo { buttonText = "misc mods", method =() => Mods.Cat7(), enabled = false, toolTip = "Go to Category 7!"},
+            new ButtonInfo { buttonText = "safety mods", method =() => Mods.Cat8(), enabled = false, toolTip = "Go to Category 8!"},
             // u can change the button name and the tool tip to whatever u want just make sure that when u change the button name u change the "Exit" thing for that category
         };
         public static List<ButtonInfo> CatButtons1 = new List<ButtonInfo> // category 1
         {
             new ButtonInfo { buttonText = "exit movement mods", method =() => Mods.Cat1(), enabled = false, toolTip = "Go to Main!"},
             // u can move these mods to any category u want, but dont put any of them in the "buttons" area, just in the ones that say "CatButtons"s
+            new ButtonInfo { buttonText = "(very bad) tag gun", method =() => Mods.taggunv2again(), enabled = false, toolTip = "tag aura"},
+            new ButtonInfo { buttonText = "no tag on join", method =() => Mods.NoTagOnJoin(), disableMethod =() => Mods.TagOnJoin(), enabled = false, toolTip = "Long arms!"},
+            new ButtonInfo { buttonText = "tag self", method =() => Mods.TagSelf(), enabled = false, toolTip = "tag aura"},
+            new ButtonInfo { buttonText = "tag aura", method =() => Mods.PhysicalTagAura(), enabled = false, toolTip = "tag aura"},
+            new ButtonInfo { buttonText = "no tag freeze", method =() => Mods.NoTagFreezeMod(), enabled = false, toolTip = "tag aura"},
+            new ButtonInfo { buttonText = "longer tag aura", method =() => Mods.PhysicalTagAuralonger(), enabled = false, toolTip = "tag aura"},
+            new ButtonInfo { buttonText = "very long tag aura", method =() => Mods.PhysicalTagAuralongest(), enabled = false, toolTip = "tag aura"},
+            new ButtonInfo { buttonText = "tag all (W?)", method =() => Mods.taggywaaggy(), enabled = false, toolTip = "tag aura"},
+            new ButtonInfo { buttonText = "punch mod", method =() => Mods.BetterPunchMod(), enabled = false, toolTip = "tag aura"},
             new ButtonInfo { buttonText = "Long Arms", method =() => Mods.lognarms(), disableMethod =() => Mods.fixarms(), enabled = false, toolTip = "Long arms!"},
+            new ButtonInfo { buttonText = "Slight Longarms", method =() => Mods.slightarms(), disableMethod =() => Mods.fixarms(), enabled = false, toolTip = "slight longarms"},
             new ButtonInfo { buttonText = "Platforms", method =() => Mods.Platforms(), enabled = false, toolTip = "Platforms!"},
             new ButtonInfo { buttonText = "Invis Platforms", method =() => Mods.Invisableplatforms(), enabled = false, toolTip = "Platforms but invisable!"},
             new ButtonInfo { buttonText = "Sticky Platforms", method =() => Mods.Stickyplats(), enabled = false, toolTip = "Platforms but sticky!"},
             new ButtonInfo { buttonText = "Invis Sticky Platforms", method =() => Mods.invisstickyplats(), enabled = false, toolTip = "Platforms but invisable and sticky!"},
             new ButtonInfo { buttonText = "Ghost Monke", method =() => Mods.Ghostmonke(), enabled = false, toolTip = "Ghost monke!"},
             new ButtonInfo { buttonText = "Invis Monke", method =() => Mods.Invis(), enabled = false, toolTip = "Invisable monke!"},
-            new ButtonInfo { buttonText = "NoClip", method =() => Mods.Noclip(), enabled = false, toolTip = "Go through anything!"},
+            new ButtonInfo { buttonText = "NoClip", method =() => Mods.NoClipV1(), enabled = false, toolTip = "Go through anything!"},
+            new ButtonInfo { buttonText = "slow fly", method =() => Mods.slowFly (), enabled = false, toolTip = "fly slowly"},
             new ButtonInfo { buttonText = "Fly", method =() => Mods.Fly (), enabled = false, toolTip = "Fly like a bird!"},
             new ButtonInfo { buttonText = "Fast Fly", method =() => Mods.fastFly(), enabled = false, toolTip = "Fly like a bird but fast!"},
             new ButtonInfo { buttonText = "Really Fast Fly", method =() => Mods.hellafastFly(), enabled = false, toolTip = "FLy like a bird but very fast!"},
@@ -99,8 +110,10 @@ namespace MalachiTemp.UI
         public static List<ButtonInfo> CatButtons2 = new List<ButtonInfo>
         {
             new ButtonInfo { buttonText = "exit rig mods", method =() => Mods.Cat2(), enabled = false, toolTip = "Go to Main!"},
-            new ButtonInfo { buttonText = "HeadSpin V1", method =() => Mods.HeadSpin(), disableMethod =() => Mods.fix1(), enabled = false, toolTip = "spin head v1"},
-            new ButtonInfo { buttonText = "HeadSpin V3", method =() => Mods.HeadSpinV3(), disableMethod =() => Mods.fix3(), enabled = false, toolTip = "head spin v2"},
+            new ButtonInfo { buttonText = "pregnant", method =() => Mods.preggy(), disableMethod =() => Mods.fix4(), enabled = false, toolTip = "break neak"},
+            new ButtonInfo { buttonText = "HeadSpin 1", method =() => Mods.HeadSpin(), disableMethod =() => Mods.fix1(), enabled = false, toolTip = "spin head v1"},
+            new ButtonInfo { buttonText = "HeadSpin 2", method =() => Mods.HeadSpinV2(), disableMethod =() => Mods.fix1(), enabled = false, toolTip = "spin head v2"},
+            new ButtonInfo { buttonText = "HeadSpin 3", method =() => Mods.HeadSpinV3(), disableMethod =() => Mods.fix3(), enabled = false, toolTip = "head spin v3"},
             new ButtonInfo { buttonText = "head upside down", method =() => Mods.upsidedownhead(), disableMethod =() => Mods.fix5(), enabled = false, toolTip = "upside down"},
             new ButtonInfo { buttonText = "vecna moment", method =() => Mods.backhead(), disableMethod =() => Mods.fix4(), enabled = false, toolTip = "break neak"},
         };
@@ -109,7 +122,12 @@ namespace MalachiTemp.UI
         {
             new ButtonInfo { buttonText = "exit this section ", method =() => Mods.Cat3(), enabled = false, toolTip = "Go to Main!"},
             new ButtonInfo { buttonText = "quit game", method =() => Mods.quit(), enabled = false, toolTip = "closes game"},
+            new ButtonInfo { buttonText = "sound spam", method =() => Mods.SoundSpam(), enabled = false, toolTip = "attempts to rejoin the last left lobby"},
             new ButtonInfo { buttonText = "join last room", method =() => Mods.rejoin(), enabled = false, toolTip = "attempts to rejoin the last left lobby"},
+            new ButtonInfo { buttonText = "finger painter detector", method =() => Mods.FingerPainterDetector(), enabled = false, toolTip = "sends notif if finger painter joins"},
+            new ButtonInfo { buttonText = "change name to nomadontop", method =() => Mods.changename(), enabled = false, toolTip = "changes name"},
+            new ButtonInfo { buttonText = "no name (W?)", method =() => Mods.changename2(), enabled = false, toolTip = "attempts to give you no made"},
+            new ButtonInfo { buttonText = "disable network triggers", method =() => Mods.DisableNetworkTriggers(), disableMethod =() => Mods.EnableNetworkTriggers(), enabled = false, toolTip = "i dont think anyone reads these"},
         };
         // category 4
         public static List<ButtonInfo> CatButtons4 = new List<ButtonInfo>
@@ -121,13 +139,25 @@ namespace MalachiTemp.UI
             new ButtonInfo { buttonText = "Bat Gun", method =() => Mods.Batgun(), enabled = false, toolTip = "Shooot and spawn the!"},
             new ButtonInfo { buttonText = "Bug Orbit", method =() => Mods.BugOrbit(), enabled = false, toolTip = "Makes the bug orbit you!"},
             new ButtonInfo { buttonText = "Bat Orbit", method =() => Mods.BatOrbit(), enabled = false, toolTip = "Makes the bat orbit you!"},
-            new ButtonInfo { buttonText = "monsters to hand (M)", method =() => Mods.monstershand(), enabled = false, toolTip = "puts the monsters to your hand"},
-            new ButtonInfo { buttonText = "big monsters (M)", method =() => Mods.bigmonsters(), enabled = false, toolTip = "makes the monsters big"},
+            new ButtonInfo { buttonText = "big bug", method =() => Mods.bigassbug(), disableMethod =() => Mods.fixbug(), enabled = false, toolTip = "big ass bug"},
+            new ButtonInfo { buttonText = "req ownership bug", method =() => Mods.OwnerBug(), enabled = false, toolTip = "grabs the bug even if its in someones hand"},
         };
         // category 5
         public static List<ButtonInfo> CatButtons5 = new List<ButtonInfo>
         {
             new ButtonInfo { buttonText = "exit op mods", method =() => Mods.Cat5(), enabled = false, toolTip = "Go to Main!"},
+            new ButtonInfo { buttonText = "antiban (D?)", method =() => Mods.AntiBan(), enabled = false, toolTip = "puts the monsters to your hand"},
+            new ButtonInfo { buttonText = "antiban v2 (und?)", method =() => Mods.AntiBanV2(), enabled = false, toolTip = "probably working antiban"},
+            new ButtonInfo { buttonText = "change name all (ANTIBAN)", method =() => Mods.NameChangeAll(), enabled = false, toolTip = "probably working antiban"},
+            new ButtonInfo { buttonText = "set master (ANTIBAN)", method =() => Mods.setmaster(), enabled = false, toolTip = "puts the monsters to your hand"},
+            new ButtonInfo { buttonText = "crash gun", method =() => Mods.CrashGunMod(), disableMethod =() => Mods.TagOnJoin(), enabled = false, toolTip = "Long arms!"},
+            new ButtonInfo { buttonText = "ss disable network triggers (ANTIBAN) (LM!)", method =() => Mods.DisablenetworktriggersSS(), enabled = false, toolTip = "disables network triggers but serversided"},
+            new ButtonInfo { buttonText = "monsters to hand (M)(UND)", method =() => Mods.monstershand(), enabled = false, toolTip = "puts the monsters to your hand" },
+            new ButtonInfo { buttonText = "push mod(M)(RG)(UND)", method =() => Mods.GrabMonsters1(), enabled = false, toolTip = "spawms monsters when right grip"},
+            new ButtonInfo { buttonText = "kick all (PRIVS)(UND)", method =() => Mods.KickAll(), enabled = false, toolTip = "kicks all players"},
+            new ButtonInfo { buttonText = "kick gun (und?)", method =() => Mods.KickGunNOTSTUMP(), enabled = false, toolTip = "kicks whoever your hand desires"},
+            new ButtonInfo { buttonText = "Anti-Tag (M!!!)", method =() => Mods.AntiTag(), disableMethod =() => Mods.TagOnJoin(), enabled = false, toolTip = "Long arms!"},
+
         };
         // category 6
         public static List<ButtonInfo> CatButtons6 = new List<ButtonInfo>
@@ -135,16 +165,20 @@ namespace MalachiTemp.UI
             new ButtonInfo { buttonText = "exit visual mods", method =() => Mods.Cat6(), enabled = false, toolTip = "Go to Main!"},
             new ButtonInfo { buttonText = "Tracers", method =() => Mods.Tracers(), enabled = false, toolTip = "Lines towards everyone!"},
             new ButtonInfo { buttonText = "Beacons", method =() => Mods.Beacons(), enabled = false, toolTip = "Poles on everyone!"},
+            new ButtonInfo { buttonText = "esp", method =() => Mods.esp(), enabled = false, toolTip = "see thru walls"},
         };
         // category 7
         public static List<ButtonInfo> CatButtons7 = new List<ButtonInfo>
         {
-            new ButtonInfo { buttonText = "Exit Category 7", method =() => Mods.Cat7(), enabled = false, toolTip = "Go to Main!"},
+            new ButtonInfo { buttonText = "Exit misc mods", method =() => Mods.Cat7(), enabled = false, toolTip = "Go to Main!"},
+            new ButtonInfo { buttonText = "gameobject test (RG & LG)", method =() => Mods.exp(), disableMethod =() => Mods.destroyexp(), enabled = false, toolTip = "tests some code i made"},
+            new ButtonInfo { buttonText = "platform spam", method =() => Mods.PlatformGun(), enabled = false, toolTip = "attempts to rejoin the last left lobby"},
         };
         // category 8
         public static List<ButtonInfo> CatButtons8 = new List<ButtonInfo>
         {
-            new ButtonInfo { buttonText = "Exit Category 8", method =() => Mods.Cat8(), enabled = false, toolTip = "Go to Main!"},
+            new ButtonInfo { buttonText = "exit safety mods", method =() => Mods.Cat8(), enabled = false, toolTip = "Go to Main!"},
+            new ButtonInfo { buttonText = "antireport", method =() => Mods.AntiReport(), enabled = false, toolTip = "Go to Main!"},
         };
         // favs (NW)
         public static List<ButtonInfo> Favbuttons = new List<ButtonInfo>
